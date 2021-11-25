@@ -33,6 +33,7 @@ function Login({ setTooltip }) {
           <h3 className='auth-form__title'>Вход</h3>
           <label className='auth-form__input'>
             <input
+              data-testid='email_input'
               type='email'
               name='email'
               id='email'
@@ -45,6 +46,7 @@ function Login({ setTooltip }) {
           </label>
           <label className='auth-form__input'>
             <input
+              data-testid='password_input'
               type='password'
               name='password'
               id='password'
