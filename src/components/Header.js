@@ -39,7 +39,7 @@ function Header() {
             aria-label='меню'
             onClick={toggleMenu}
           ></button>
-          <div className='header__wrapper'>
+          <div className='header__wrapper' data-testid='header-wrapper-element'>
             <p className='header__user'>{email}</p>
             <button className='header__logout' onClick={handleSignOut}>
               Выйти
@@ -47,12 +47,12 @@ function Header() {
           </div>
         </Route>
         <Route path='/signup'>
-          <Link className='header__auth-link' to='signin'>
+          <Link className='header__auth-link' data-testid='link-signup-element' to='signin'>
             Войти
           </Link>
         </Route>
         <Route path='/signin'>
-          <Link className='header__auth-link' to='signup'>
+          <Link className='header__auth-link' to='signup' data-testid='link-signin-element'>
             Регистрация
           </Link>
         </Route>
