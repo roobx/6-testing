@@ -29,7 +29,7 @@ function Header() {
             <Switch>
                 <Route exact path="/">
                     <button className="header__burger" type="button" aria-label="меню" onClick={toggleMenu}></button>
-                    <div className="header__wrapper">
+                    <div className="header__wrapper" data-testid="header-wrapper-element">
                         <p className="header__user">{email}</p>
                         <button className="header__logout" onClick={handleSignOut}>
                             Выйти
@@ -37,14 +37,12 @@ function Header() {
                     </div>
                 </Route>
                 <Route path="/signup">
-                    {/* data-testid="link-signup-element" */}
-                    <Link className="header__auth-link" to="signin">
+                    <Link className="header__auth-link" to="signin" data-testid="link-signup-element">
                         Войти
                     </Link>
                 </Route>
                 <Route path="/signin">
-                    {/* data-testid="link-signin-element" */}
-                    <Link className="header__auth-link" to="signup">
+                    <Link className="header__auth-link" to="signup" data-testid="link-signin-element">
                         Регистрация
                     </Link>
                 </Route>

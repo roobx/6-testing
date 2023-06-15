@@ -41,6 +41,7 @@ function Login({ setTooltip }) {
                             value={values.email || ""}
                             onChange={handleChange}
                             required
+                            data-testid="email_input"
                         />
                     </label>
                     <label className="auth-form__input">
@@ -53,6 +54,7 @@ function Login({ setTooltip }) {
                             value={values.password || ""}
                             onChange={handleChange}
                             required
+                            data-testid="password_input"
                         />
                     </label>
                 </div>
