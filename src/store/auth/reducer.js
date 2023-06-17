@@ -6,7 +6,7 @@ export const initialState = {
     registerSending: false,
     registerError: "",
     loginSending: false,
-    loginError: "",
+    loginError: undefined,
 };
 
 const reducer = (state = initialState, action) => {

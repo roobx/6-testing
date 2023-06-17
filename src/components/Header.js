@@ -20,8 +20,8 @@ function Header() {
     return (
         <header
             className={`header page__section 
-         ${isMenuOpen ? "header_menu-open" : ""} 
-         ${isMain ? "header_page-main" : ""}`}
+                ${isMenuOpen ? "header_menu-open" : ""} 
+                ${isMain ? "header_page-main" : ""}`}
         >
             <Link className="header__auth-link" to="">
                 <img src={logoPath} alt="Логотип проекта Mesto" className="logo header__logo" />
@@ -30,19 +30,21 @@ function Header() {
                 <Route exact path="/">
                     <button className="header__burger" type="button" aria-label="меню" onClick={toggleMenu}></button>
                     <div className="header__wrapper" data-testid="header-wrapper-element">
-                        <p className="header__user">{email}</p>
+                        <p className="header__user" data-testid="header-user-name">
+                            {email}
+                        </p>
                         <button className="header__logout" onClick={handleSignOut}>
                             Выйти
                         </button>
                     </div>
                 </Route>
                 <Route path="/signup">
-                    <Link className="header__auth-link" to="signin" data-testid="link-signup-element">
+                    <Link className="header__auth-link" to="signin" data-testid="link-signin-element">
                         Войти
                     </Link>
                 </Route>
                 <Route path="/signin">
-                    <Link className="header__auth-link" to="signup" data-testid="link-signin-element">
+                    <Link className="header__auth-link" to="signup" data-testid="link-signup-element">
                         Регистрация
                     </Link>
                 </Route>

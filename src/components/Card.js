@@ -17,9 +17,7 @@ function Card({ card, onImageClick, onDelete }) {
     const cardLikeButtonClassName = `card__like-button ${isLiked && "card__like-button_is-active"}`;
 
     const isOwn = card.owner._id === currentUser._id;
-    const cardDeleteButtonClassName = `card__delete-button ${
-        isOwn ? "card__delete-button_visible" : "card__delete-button_hidden"
-    }`;
+    const cardDeleteButtonClassName = `card__delete-button ${isOwn ? "card__delete-button_visible" : "card__delete-button_hidden"}`;
 
     function handleLikeClick() {
         dispatch(changeLikeCardStatus(card._id, !isLiked));
@@ -31,11 +29,7 @@ function Card({ card, onImageClick, onDelete }) {
 
     return (
         <li className="places__item card">
-            <div
-                className="card__image"
-                style={{ backgroundImage: `url(${card.link})` }}
-                onClick={handleImageClick}
-            ></div>
+            <div className="card__image" style={{ backgroundImage: `url(${card.link})` }} onClick={handleImageClick}></div>
             <button type="button" className={cardDeleteButtonClassName} onClick={handleDeleteClick}></button>
             <div className="card__description">
                 <h2 className="card__title">{card.name}</h2>

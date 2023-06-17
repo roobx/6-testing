@@ -1,0 +1,24 @@
+[
+    {
+        "likes": [
+            {
+                "name": "Кот   ",
+                "about": "Шрёдингера",
+                "avatar": "https://i.kym-cdn.com/photos/images/newsfeed/000/406/346/fd3.jpg",
+                "_id": "40e10869887b004a90f3ce78",
+                "cohort": "cohort-13"
+            }
+        ],
+        "_id": "623a100d47eb50024925500f",
+        "name": "ыыыы",
+        "link": "https://ya.cc/t/Fh3VTBAfyaBB3",
+        "owner": {
+            "name": "M-Cool Cool-M",
+            "about": "Pif Puf",
+            "avatar": "https://clck.ru/YDUeb",
+            "_id": "993c8682f39a3e6b3e598d71",
+            "cohort": "cohort-13"
+        },
+        "createdAt": "2022-03-22T18:06:05.791Z"
+    }
+]
