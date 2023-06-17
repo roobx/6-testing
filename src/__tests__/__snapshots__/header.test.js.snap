@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component Should render logo 1`] = `
+<DocumentFragment>
+  <header
+    class="header page__section 
+                 
+                header_page-main"
+  >
+    <a
+      class="header__auth-link"
+      href="/"
+    >
+      <img
+        alt="Логотип проекта Mesto"
+        class="logo header__logo"
+        src="logo.svg"
+      />
+    </a>
+    <button
+      aria-label="меню"
+      class="header__burger"
+      type="button"
+    />
+    <div
+      class="header__wrapper"
+      data-testid="header-wrapper-element"
+    >
+      <p
+        class="header__user"
+      />
+      <button
+        class="header__logout"
+      >
+        Выйти
+      </button>
+    </div>
+  </header>
+</DocumentFragment>
+`;
